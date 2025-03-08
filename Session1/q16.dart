@@ -5,5 +5,5 @@ void main() {
 
   int number1 = 10;
   int number2 = 3;
-  var result = number1 * number2;
+  var result = number1 / number2;
 }
