@@ -1,6 +1,8 @@
 import 'dart:io';
 
-void main() {}
+void main() {
+  getWeather('egypt');
+}
 // 4. Weather Report:
 
 Map<String, dynamic> weather = {
