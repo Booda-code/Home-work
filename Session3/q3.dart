@@ -5,7 +5,8 @@ void main() {
     ['Shopping', '12:00 PM', false],
     ['Gym', '2:00 PM', false]
   ];
-  print(updateTask(['gym', '3:00 PM', true], toDoList, 2));
+  // print(updateTask(['gym', '3:00 PM', true], toDoList, 2));
+  displayTasks(toDoList);
 }
 
 dynamic addTask(List<dynamic> task, List<dynamic> toDoList) {
@@ -25,7 +26,6 @@ dynamic updateTask(List<dynamic> task, List<dynamic> toDoList, int index) {
 
 void displayTasks(List<dynamic> toDoList) {
   toDoList.forEach((task) {
-    String completionStatus = task[2] ? 'Completed' : 'Pending';
-    print('Task: ${task[0]}, Due: ${task[1]}, Status: $completionStatus');
+    print('Task: ${task[0]}, Due: ${task[1]}, Status: ${task[2]}');
   });
 }
