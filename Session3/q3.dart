@@ -22,3 +22,10 @@ dynamic updateTask(List<dynamic> task, List<dynamic> toDoList, int index) {
   toDoList[index] = task;
   return toDoList;
 }
+
+void displayTasks(List<dynamic> toDoList) {
+  toDoList.forEach((task) {
+    String completionStatus = task[2] ? 'Completed' : 'Pending';
+    print('Task: ${task[0]}, Due: ${task[1]}, Status: $completionStatus');
+  });
+}
